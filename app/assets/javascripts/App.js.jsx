@@ -43,6 +43,3 @@ if (path.match(/^\/questions\/(\d+)$/))        return <QuestionShowPage  questio
   )
 };
 
-$(function(){
-  React.render(<MainComponent />, document.body);
-});
