@@ -1,7 +1,15 @@
 var QuestionList = React.createClass({
 
-  handleClick: function(){
-    this.props.addToTourGuide({truth: this.props.truth})
-  }
+  render: function() {
+    var that = this;
+    var listOfQuestions = this.props.questions.map(function(question, index){
+      return <QuestionIndividual key={index} truth={question.truth} />
+    })
 
-})
+    return (
+      <div class="listofQuestions">
+      {listOfQuestions}
+      </div>
+    );
+  }
+});

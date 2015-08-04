@@ -7,8 +7,9 @@ Rails.application.routes.draw do
   }
 
   scope constraints: ACCEPTS_JSON do
-    resource :questions
+    resource :questions do
     resource :comments
+  end
   end
 
   get '*path', to: "single_page_app#show"

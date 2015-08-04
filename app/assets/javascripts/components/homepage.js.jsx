@@ -36,7 +36,7 @@ HomePage = React.createClass({
         <h2> To begin, find a question you would like to answer. </h2>
 
         <div class="question-list-right">
-        <h4> Questions will list here.</h4>
+        {this.renderQuestions()}
         </div>
 
         <div class="comment-box-left">
