@@ -12,19 +12,17 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'bcrypt', '~> 3.1.7'
 
-gem 'pry-rails'
-gem 'pry-byebug'
+gem 'gon'
 
 gem 'react-rails', '~> 1.0'
 
-gem 'capybara'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'database_cleaner'
+end
 
