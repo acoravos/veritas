@@ -18,6 +18,8 @@ gem 'pry-byebug'
 
 gem 'react-rails', '~> 1.0'
 
+gem 'capybara'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
