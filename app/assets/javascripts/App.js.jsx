@@ -29,8 +29,7 @@ App.goto = function(path){
 
 App.router = function(path){
   if (path === '/')                         return <HomePage />;
-  if (path === '/tweet-box')                return <TweetBox />;
-  if (path.match(/^\/questions\/(\d+)$/))   return <QuestionShowPage  question_id={RegExp.$1} />;
+  if (path.match(/^\/questions\/(\d+)\/comments$/))   return <CommentShowPage  question_id={RegExp.$1} />;
   return <h1>Page Not Found</h1>
 };
 
