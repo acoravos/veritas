@@ -4300,3 +4300,876 @@ Migrating to CreateComments (20150804054100)
   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 06:30:05.621482"], ["truth", "Your house, containing everything you own, catches fire. After saving your loved ones and pets, you have time to safely make a final dash to save any one item. What would it be? Why?\n"], ["updated_at", "2015-08-04 06:30:05.621482"]]
   [1m[35m (0.2ms)[0m  COMMIT
   [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:32:36 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SinglePageAppController#show as HTML
+  [1m[35mQuestion Load (0.6ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 11ms (Views: 6.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:37:50 -0700
+
+SyntaxError (/Users/andreacoravos/Desktop/veritas/app/controllers/single_page_app_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+/Users/andreacoravos/Desktop/veritas/app/controllers/single_page_app_controller.rb:17: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/single_page_app_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  app/controllers/single_page_app_controller.rb:17: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.5ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (53.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:03 -0700
+
+SyntaxError (/Users/andreacoravos/Desktop/veritas/app/controllers/single_page_app_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end):
+  app/controllers/single_page_app_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:25 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:30 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:30 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:30 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:30 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:30 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:30 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:31 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:31 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:31 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:31 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:31 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:31 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:31 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:31 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:31 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:31 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:31 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:31 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:31 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:31 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:38:31 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:01 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:07 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000single_page_app#show
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:07 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000single_page_app#show
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:07 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000single_page_app#show
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:07 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000single_page_app#show
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:07 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000single_page_app#show
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:14 -0700
+
+SyntaxError (/Users/andreacoravos/Desktop/veritas/app/controllers/single_page_app_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end):
+  app/controllers/single_page_app_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:19 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000single_page_app#show
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:19 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000single_page_app#show
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:19 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000single_page_app#show
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:19 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000single_page_app#show
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:19 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000single_page_app#show
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:24 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000single_page_app#show
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:28 -0700
+Processing by SinglePageAppController#show as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:39:36 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (446.4ms)
+Completed 200 OK in 449ms (Views: 448.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-03 23:39:36 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-03 23:39:36 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-03 23:39:36 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-03 23:39:36 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-03 23:39:36 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-03 23:39:36 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-03 23:39:36 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-03 23:39:36 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-03 23:39:36 -0700
+
+
+Started GET "/assets/components/questions.js?body=1" for 127.0.0.1 at 2015-08-03 23:39:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-03 23:39:36 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-03 23:39:36 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-03 23:39:36 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-03 23:39:36 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-03 23:39:36 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-03 23:39:36 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-03 23:39:36 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-03 23:39:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-03 23:39:36 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-03 23:41:00 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (113.9ms)
+Completed 200 OK in 116ms (Views: 116.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-03 23:41:00 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-03 23:41:00 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-03 23:41:00 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-03 23:41:00 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-03 23:41:00 -0700
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-03 23:41:00 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-03 23:41:00 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-03 23:41:00 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-03 23:41:00 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-03 23:41:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:00 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:00 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:01 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:01 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:01 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:01 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:01 -0700
+
+
+Started GET "/assets/components/questions.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:01 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:01 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:01 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:01 -0700
