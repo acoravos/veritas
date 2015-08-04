@@ -1,13 +1,10 @@
 class CommentsController < ApplicationController
 
-
   def index
     @presenter = {
       :comments => Comment.last(10),
       :form => {
-        :action => comments_path,
-        :csrf_param => request_forgery_protection_token,
-        :csrf_token => form_authenticity_token
+        :action => question_comments_path,
       }
     }
   end
@@ -19,7 +16,7 @@ class CommentsController < ApplicationController
     if request.xhr?
       render :json => Comment.last(10)
     else
-      redirect_to comments_path
+      redirect_to question_comments_path
     end
   end
 

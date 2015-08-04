@@ -3,6 +3,8 @@ HomePage = React.createClass({
     return {
       questions: null,
       selectedQuestion: null,
+      comments: null,
+      selectedComments,
     }
   },
 

@@ -8434,3 +8434,272 @@ Started GET "/questions" for 127.0.0.1 at 2015-08-04 15:43:56 -0700
 Processing by QuestionsController#index as JSON
   [1m[35mQuestion Load (0.5ms)[0m  SELECT "questions".* FROM "questions"
 Completed 200 OK in 15ms (Views: 6.5ms | ActiveRecord: 3.2ms)
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateQuestions (20150728183138)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (8.6ms)[0m  [1mCREATE TABLE "questions" ("id" serial primary key, "truth" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150728183138"]]
+  [1m[36m (5.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20150804054100)
+  [1m[35m (6.2ms)[0m  BEGIN
+  [1m[36m (9.1ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "question_id" integer, "author" character varying(255), "comment" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150804054100"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 23:11:59.200834"], ["truth", "Given the choice of anyone in the world, whom would you want as a dinner guest?\n"], ["updated_at", "2015-08-04 23:11:59.200834"]]
+  [1m[35m (6.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 23:11:59.213295"], ["truth", "Would you like to be famous? In what way?\n"], ["updated_at", "2015-08-04 23:11:59.213295"]]
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 23:11:59.221738"], ["truth", "Before making a telephone call, do you ever rehearse what you are going to say? Why?\n"], ["updated_at", "2015-08-04 23:11:59.221738"]]
+  [1m[35m (5.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 23:11:59.229160"], ["truth", "What would constitute a “perfect” day for you?\n"], ["updated_at", "2015-08-04 23:11:59.229160"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 23:11:59.231369"], ["truth", "When did you last sing to yourself? To someone else?\n"], ["updated_at", "2015-08-04 23:11:59.231369"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 23:11:59.233307"], ["truth", "If you were able to live to the age of 90 and retain either the mind or body of a 30-year-old for the last 60 years of your life, which would you want?\n"], ["updated_at", "2015-08-04 23:11:59.233307"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 23:11:59.235141"], ["truth", "Do you have a secret hunch about how you will die?\n"], ["updated_at", "2015-08-04 23:11:59.235141"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 23:11:59.236872"], ["truth", "For what in your life do you feel most grateful?\n"], ["updated_at", "2015-08-04 23:11:59.236872"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 23:11:59.244080"], ["truth", "If you could change anything about the way you were raised, what would it be?\n"], ["updated_at", "2015-08-04 23:11:59.244080"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 23:11:59.245623"], ["truth", "If you could wake up tomorrow having gained any one quality or ability, what would it be?\n"], ["updated_at", "2015-08-04 23:11:59.245623"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 23:11:59.247140"], ["truth", "If a crystal ball could tell you the truth about yourself, your life, the future or anything else, what would you want to know?\n"], ["updated_at", "2015-08-04 23:11:59.247140"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 23:11:59.248910"], ["truth", "Is there something that you’ve dreamed of doing for a long time? Why haven’t you done it?\n"], ["updated_at", "2015-08-04 23:11:59.248910"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 23:11:59.250487"], ["truth", "What is the greatest accomplishment of your life?\n"], ["updated_at", "2015-08-04 23:11:59.250487"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 23:11:59.251913"], ["truth", "What do you value most in a friendship?\n"], ["updated_at", "2015-08-04 23:11:59.251913"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 23:11:59.253307"], ["truth", "What is your most treasured memory?\n"], ["updated_at", "2015-08-04 23:11:59.253307"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 23:11:59.254624"], ["truth", "What is your most terrible memory?\n"], ["updated_at", "2015-08-04 23:11:59.254624"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 23:11:59.255875"], ["truth", "If you knew that in one year you would die suddenly, would you change anything about the way you are now living? Why?\n"], ["updated_at", "2015-08-04 23:11:59.255875"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 23:11:59.257189"], ["truth", "What does friendship mean to you?\n"], ["updated_at", "2015-08-04 23:11:59.257189"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 23:11:59.258472"], ["truth", "How close and warm is your family? Do you feel your childhood was happier than most other people’s?\n"], ["updated_at", "2015-08-04 23:11:59.258472"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 23:11:59.259774"], ["truth", "How do you feel about your relationship with your mother?\n"], ["updated_at", "2015-08-04 23:11:59.259774"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 23:11:59.261071"], ["truth", "Complete this sentence: \"I wish I had someone with whom I could share ...\"\n"], ["updated_at", "2015-08-04 23:11:59.261071"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 23:11:59.262403"], ["truth", "When did you last cry in front of another person? By yourself?\n"], ["updated_at", "2015-08-04 23:11:59.262403"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 23:11:59.263547"], ["truth", "What, if anything, is too serious to be joked about?\n"], ["updated_at", "2015-08-04 23:11:59.263547"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 23:11:59.264689"], ["truth", "If you were to die this evening with no opportunity to communicate with anyone, what would you most regret not having told someone? Why haven’t you told them yet?\n"], ["updated_at", "2015-08-04 23:11:59.264689"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 23:11:59.266090"], ["truth", "Your house, containing everything you own, catches fire. After saving your loved ones and pets, you have time to safely make a final dash to save any one item. What would it be? Why?\n"], ["updated_at", "2015-08-04 23:11:59.266090"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("author", "comment", "created_at", "question_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["author", "Andrea Coravos"], ["comment", "Taylor Swift"], ["created_at", "2015-08-04 23:11:59.276506"], ["question_id", 1], ["updated_at", "2015-08-04 23:11:59.276506"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "comments" ("author", "comment", "created_at", "question_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author", "Fred Ehrsam"], ["comment", "Kanye West"], ["created_at", "2015-08-04 23:11:59.284589"], ["question_id", 1], ["updated_at", "2015-08-04 23:11:59.284589"]]
+  [1m[35m (6.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("author", "comment", "created_at", "question_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["author", "Cassie Coravos"], ["comment", "Abraham Lincoln"], ["created_at", "2015-08-04 23:11:59.292576"], ["question_id", 1], ["updated_at", "2015-08-04 23:11:59.292576"]]
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "comments" ("author", "comment", "created_at", "question_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author", "Andrea Coravos"], ["comment", "No way. I like roaming airports incognito"], ["created_at", "2015-08-04 23:11:59.299692"], ["question_id", 2], ["updated_at", "2015-08-04 23:11:59.299692"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("author", "comment", "created_at", "question_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["author", "Fred Ehrsam"], ["comment", "No, but can't stop it. Won't stop it."], ["created_at", "2015-08-04 23:11:59.301927"], ["question_id", 2], ["updated_at", "2015-08-04 23:11:59.301927"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "comments" ("author", "comment", "created_at", "question_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author", "Cassie Coravos"], ["comment", "No one will ever find me. I'm hiding in a rickshaw and driving it across India."], ["created_at", "2015-08-04 23:11:59.303717"], ["question_id", 2], ["updated_at", "2015-08-04 23:11:59.303717"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mQuestion Load (0.5ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments"
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 16:37:03 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (755.0ms)
+Completed 500 Internal Server Error in 760ms
+
+ActionView::Template::Error (SyntaxError: unknown: Adjacent JSX elements must be wrapped in an enclosing tag (10:6)
+  (in /Users/andreacoravos/Desktop/veritas/app/assets/javascripts/components/QuestionComments.js.jsx)):
+     7:   <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+     9: 
+    10:   <%= javascript_include_tag 'application' %>
+    11: 
+    12:   <%= include_gon %>
+    13: 
+  config/initializers/better_js_syntax_errors.rb:8:in `evaluate_with_better_errors'
+  app/views/single_page_app/show.html.erb:10:in `_app_views_single_page_app_show_html_erb___1341125318640106548_70318104972640'
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.3ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 16:52:03 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (206.9ms)
+Completed 500 Internal Server Error in 209ms
+
+ActionView::Template::Error (SyntaxError: /Users/andreacoravos/Desktop/veritas/app/assets/javascripts/components/QuestionComments.js.jsx:12:2
+
+1: QuestionComments = React.createClass({
+2: 
+3:   propTypes:{
+4:     questions: React.PropTypes.array.isRequired,
+5:     onSelect:  React.PropTypes.func.isRequired,
+6:   },
+7: 
+8:   handleCommentSubmit: function() {
+9:     return App.request('post', action, formData).bind(this)
+10:   }
+11: 
+12:   render: function(){
+13:     return (
+14:       <div className="comment-box"
+15:         <CommentList comments={ this.state.comments.find(gon.question_id) } />
+16:         <h1>Add a comment for {this.props.question.id} here:</h1>
+17:         <CommentForm form= { this.state.form }
+18:         onCommentSubmit={ this.handleCommentSubmit } />
+19:       </div>
+20:     );
+21:   }
+22: });):
+     7:   <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+     9: 
+    10:   <%= javascript_include_tag 'application' %>
+    11: 
+    12:   <%= include_gon %>
+    13: 
+  config/initializers/better_js_syntax_errors.rb:8:in `evaluate_with_better_errors'
+  app/views/single_page_app/show.html.erb:10:in `_app_views_single_page_app_show_html_erb___1341125318640106548_70318104972640'
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 16:52:28 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (203.0ms)
+Completed 500 Internal Server Error in 206ms
+
+ActionView::Template::Error (SyntaxError: /Users/andreacoravos/Desktop/veritas/app/assets/javascripts/components/QuestionComments.js.jsx:12:2
+
+1: QuestionComments = React.createClass({
+2: 
+3:   propTypes:{
+4:     questions: React.PropTypes.array.isRequired,
+5:     onSelect:  React.PropTypes.func.isRequired,
+6:   },
+7: 
+8:   handleCommentSubmit: function() {
+9:     return App.request('post', action, formData).bind(this);
+10:   }
+11: 
+12:   render: function(){
+13:     return (
+14:       <div className="comment-box"
+15:         <CommentList comments={ this.state.comments.find(gon.question_id) } />
+16:         <h1>Add a comment for {this.props.question.id} here:</h1>
+17:         <CommentForm form= { this.state.form }
+18:         onCommentSubmit={ this.handleCommentSubmit } />
+19:       </div>
+20:     );
+21:   }
+22: });):
+     7:   <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+     9: 
+    10:   <%= javascript_include_tag 'application' %>
+    11: 
+    12:   <%= include_gon %>
+    13: 
+  config/initializers/better_js_syntax_errors.rb:8:in `evaluate_with_better_errors'
+  app/views/single_page_app/show.html.erb:10:in `_app_views_single_page_app_show_html_erb___1341125318640106548_70318104972640'
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 16:53:18 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (222.3ms)
+Completed 500 Internal Server Error in 225ms
+
+ActionView::Template::Error (SyntaxError: /Users/andreacoravos/Desktop/veritas/app/assets/javascripts/components/QuestionComments.js.jsx:15:8
+
+1: QuestionComments = React.createClass({
+2: 
+3:   propTypes:{
+4:     questions: React.PropTypes.array.isRequired,
+5:     onSelect:  React.PropTypes.func.isRequired,
+6:   },
+7: 
+8:   handleCommentSubmit: function() {
+9:     return App.request('post', action, formData).bind(this);
+10:   },
+11: 
+12:   render: function(){
+13:     return (
+14:       <div className="comment-box"
+15:         <CommentList comments={ this.state.comments.find(gon.question_id) } />
+16:         <h1>Add a comment for {this.props.question.id} here:</h1>
+17:         <CommentForm form= { this.state.form }
+18:         onCommentSubmit={ this.handleCommentSubmit } />
+19:       </div>
+20:     );
+21:   }
+22: });):
+     7:   <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+     9: 
+    10:   <%= javascript_include_tag 'application' %>
+    11: 
+    12:   <%= include_gon %>
+    13: 
+  config/initializers/better_js_syntax_errors.rb:8:in `evaluate_with_better_errors'
+  app/views/single_page_app/show.html.erb:10:in `_app_views_single_page_app_show_html_erb___1341125318640106548_70318104972640'
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.1ms)
