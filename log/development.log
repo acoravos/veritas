@@ -5173,3 +5173,619 @@ Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:01 -
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:01 -0700
+  [1m[36m (25.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (17.7ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateQuestions (20150728183138)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (24.3ms)[0m  [1mCREATE TABLE "questions" ("id" serial primary key, "truth" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150728183138"]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20150804054100)
+  [1m[35m (5.6ms)[0m  BEGIN
+  [1m[36m (13.1ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "question_id" integer, "author" character varying(255), "comment" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150804054100"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 15:53:23.372000"], ["truth", "Given the choice of anyone in the world, whom would you want as a dinner guest?\n"], ["updated_at", "2015-08-04 15:53:23.372000"]]
+  [1m[35m (6.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 15:53:23.390290"], ["truth", "Would you like to be famous? In what way?\n"], ["updated_at", "2015-08-04 15:53:23.390290"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 15:53:23.398694"], ["truth", "Before making a telephone call, do you ever rehearse what you are going to say? Why?\n"], ["updated_at", "2015-08-04 15:53:23.398694"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 15:53:23.400959"], ["truth", "What would constitute a “perfect” day for you?\n"], ["updated_at", "2015-08-04 15:53:23.400959"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 15:53:23.402917"], ["truth", "When did you last sing to yourself? To someone else?\n"], ["updated_at", "2015-08-04 15:53:23.402917"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 15:53:23.404486"], ["truth", "If you were able to live to the age of 90 and retain either the mind or body of a 30-year-old for the last 60 years of your life, which would you want?\n"], ["updated_at", "2015-08-04 15:53:23.404486"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 15:53:23.406083"], ["truth", "Do you have a secret hunch about how you will die?\n"], ["updated_at", "2015-08-04 15:53:23.406083"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 15:53:23.407737"], ["truth", "For what in your life do you feel most grateful?\n"], ["updated_at", "2015-08-04 15:53:23.407737"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 15:53:23.409243"], ["truth", "If you could change anything about the way you were raised, what would it be?\n"], ["updated_at", "2015-08-04 15:53:23.409243"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 15:53:23.410682"], ["truth", "If you could wake up tomorrow having gained any one quality or ability, what would it be?\n"], ["updated_at", "2015-08-04 15:53:23.410682"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 15:53:23.412113"], ["truth", "If a crystal ball could tell you the truth about yourself, your life, the future or anything else, what would you want to know?\n"], ["updated_at", "2015-08-04 15:53:23.412113"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 15:53:23.413564"], ["truth", "Is there something that you’ve dreamed of doing for a long time? Why haven’t you done it?\n"], ["updated_at", "2015-08-04 15:53:23.413564"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 15:53:23.414892"], ["truth", "What is the greatest accomplishment of your life?\n"], ["updated_at", "2015-08-04 15:53:23.414892"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 15:53:23.416172"], ["truth", "What do you value most in a friendship?\n"], ["updated_at", "2015-08-04 15:53:23.416172"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 15:53:23.417434"], ["truth", "What is your most treasured memory?\n"], ["updated_at", "2015-08-04 15:53:23.417434"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 15:53:23.418698"], ["truth", "What is your most terrible memory?\n"], ["updated_at", "2015-08-04 15:53:23.418698"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 15:53:23.420088"], ["truth", "If you knew that in one year you would die suddenly, would you change anything about the way you are now living? Why?\n"], ["updated_at", "2015-08-04 15:53:23.420088"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 15:53:23.421364"], ["truth", "What does friendship mean to you?\n"], ["updated_at", "2015-08-04 15:53:23.421364"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 15:53:23.422674"], ["truth", "How close and warm is your family? Do you feel your childhood was happier than most other people’s?\n"], ["updated_at", "2015-08-04 15:53:23.422674"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 15:53:23.423928"], ["truth", "How do you feel about your relationship with your mother?\n"], ["updated_at", "2015-08-04 15:53:23.423928"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 15:53:23.425085"], ["truth", "Complete this sentence: \"I wish I had someone with whom I could share ...\"\n"], ["updated_at", "2015-08-04 15:53:23.425085"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 15:53:23.426228"], ["truth", "When did you last cry in front of another person? By yourself?\n"], ["updated_at", "2015-08-04 15:53:23.426228"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 15:53:23.427246"], ["truth", "What, if anything, is too serious to be joked about?\n"], ["updated_at", "2015-08-04 15:53:23.427246"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2015-08-04 15:53:23.428362"], ["truth", "If you were to die this evening with no opportunity to communicate with anyone, what would you most regret not having told someone? Why haven’t you told them yet?\n"], ["updated_at", "2015-08-04 15:53:23.428362"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "questions" ("created_at", "truth", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2015-08-04 15:53:23.429480"], ["truth", "Your house, containing everything you own, catches fire. After saving your loved ones and pets, you have time to safely make a final dash to save any one item. What would it be? Why?\n"], ["updated_at", "2015-08-04 15:53:23.429480"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments"
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 08:54:00 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (752.6ms)
+Completed 200 OK in 765ms (Views: 764.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/components/questions.js?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 08:54:01 -0700
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 08:54:06 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 08:54:06 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 08:54:06 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 08:54:06 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 08:54:06 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 08:54:06 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 08:54:06 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 08:54:06 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 08:54:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 08:54:06 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 08:55:50 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (297.3ms)
+Completed 200 OK in 300ms (Views: 300.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/assets/components/questions.js?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 08:55:51 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (260.1ms)
+Completed 200 OK in 262ms (Views: 262.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/assets/components/questions.js?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 08:56:37 -0700
+
+
+Started GET "/tweet-box" for 127.0.0.1 at 2015-08-04 08:57:35 -0700
+Processing by SinglePageAppController#show as HTML
+  Parameters: {"path"=>"tweet-box"}
+  Rendered single_page_app/show.html.erb (269.1ms)
+Completed 200 OK in 272ms (Views: 271.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tweet-box" for 127.0.0.1 at 2015-08-04 08:57:35 -0700
+Processing by SinglePageAppController#show as HTML
+  Parameters: {"path"=>"tweet-box"}
+  Rendered single_page_app/show.html.erb (64.2ms)
+Completed 200 OK in 67ms (Views: 66.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/assets/components/questions.js?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 08:57:36 -0700
+
+
+Started GET "/tweet-box" for 127.0.0.1 at 2015-08-04 08:58:04 -0700
+Processing by SinglePageAppController#show as HTML
+  Parameters: {"path"=>"tweet-box"}
+  Rendered single_page_app/show.html.erb (272.4ms)
+Completed 200 OK in 275ms (Views: 274.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/assets/components/questions.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:05 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (76.3ms)
+Completed 200 OK in 78ms (Views: 78.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/assets/components/questions.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 08:58:08 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 09:02:29 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (66.0ms)
+Completed 200 OK in 69ms (Views: 68.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 09:02:29 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 09:02:29 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 09:02:29 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 09:02:29 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 09:02:29 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 09:02:29 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 09:02:29 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 09:02:29 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 09:02:29 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 09:02:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 09:02:29 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 09:02:29 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 09:02:29 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 09:02:29 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 09:02:30 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 09:02:30 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 09:02:30 -0700
+
+
+Started GET "/assets/components/questions.js?body=1" for 127.0.0.1 at 2015-08-04 09:02:30 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 09:02:30 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 09:02:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 09:02:30 -0700
