@@ -1,9 +1,24 @@
 HomePage = React.createClass({
-    getInitialState: function(){
-    return {
-      path: location.pathname,
-      }
-    },
+  getInitialState: function(){
+  return {
+    questions: null,
+    }
+  },
+
+  componentDidMount: function(){
+    $.getJSON('/questions').then(function(questions){
+      this.setState({questions: questions})
+    }.bind(this));
+  },
+
+  renderQuestions: function(){
+    if (this.state.questions === null) return 'Loading...';
+    return (
+      <QuestionList questions={this.state.questions} />
+    );
+  },
+
+
 
   render: function(){
     return (
@@ -19,6 +34,14 @@ HomePage = React.createClass({
         <p><b>At Veritas, we are here to help.</b> We provide a space for you to test out your answers with the community first before having to answer your partner </p>
 
         <h2> To begin, find a question you would like to answer. </h2>
+
+        <div class="question-list-right">
+        <h4> Questions will list here.</h4>
+        </div>
+
+        <div class="comment-box-left">
+        <h4>Comments will go here.</h4>
+        </div>
 
       </div>
     );

@@ -4,8 +4,4 @@ var QuestionList = React.createClass({
     this.props.addToTourGuide({truth: this.props.truth})
   }
 
-
-  render: function(){
-    var
-  }
 })
