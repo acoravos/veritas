@@ -1,23 +1,34 @@
 HomePage = React.createClass({
-  getInitialState: function(){
-  return {
-    questions: null,
+  getInitialState: function() {
+    return {
+      questions: null,
+      selectedQuestion: null,
     }
   },
 
-  componentDidMount: function(){
-    $.getJSON('/questions').then(function(questions){
+  componentDidMount: function() {
+    Question.all().then(function(questions){
       this.setState({questions: questions})
-    }.bind(this));
+    }.bind(this))
+  },
+
+  selectQuestion: function(question){
+    this.setState({selectedQuestion: question})
   },
 
   renderQuestions: function(){
     if (this.state.questions === null) return 'Loading...';
     return (
-      <QuestionList questions={this.state.questions} />
+      <QuestionList questions={this.state.questions} onSelect={this.selectQuestion}/>
     );
   },
 
+  renderComments: function(){
+    if (this.state.selectedQuestion === null) return;
+    return (
+      <QuestionComments question={this.state.selectedQuestion} />
+    )
+  },
 
 
   render: function(){
@@ -40,7 +51,7 @@ HomePage = React.createClass({
         </div>
 
         <div class="comment-box-left">
-        <h4>Comments will go here.</h4>
+          {this.renderComments()}
         </div>
 
       </div>

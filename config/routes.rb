@@ -1,14 +1,12 @@
 Rails.application.routes.draw do
 
-  get 'single_page_app/show'
-
   ACCEPTS_JSON = lambda { |request|
     request.accepts.include?(:json)
   }
 
   scope constraints: ACCEPTS_JSON do
-    resource :questions do
-    resource :comments
+    resources :questions do
+    resources :comments
   end
   end
 

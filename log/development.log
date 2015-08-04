@@ -6068,3 +6068,2060 @@ ActionView::Template::Error (SyntaxError: unknown: Adjacent JSX elements must be
   Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
   Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
   Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:15:06 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (438.1ms)
+Completed 500 Internal Server Error in 446ms
+
+ActionView::Template::Error (SyntaxError: unknown: Adjacent JSX elements must be wrapped in an enclosing tag (16:6)
+  (in /Users/andreacoravos/Desktop/veritas/app/assets/javascripts/components/QuestionIndividual.js.jsx)):
+     5:   <%= stylesheet_link_tag    'application', media: 'all' %>
+     6:   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+     7: 
+     8:   <%= javascript_include_tag 'application' %>
+     9: 
+    10: 
+    11: </head>
+  app/views/single_page_app/show.html.erb:8:in `_app_views_single_page_app_show_html_erb___461598226332805601_70196164469000'
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.7ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:26:04 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (408.2ms)
+Completed 500 Internal Server Error in 411ms
+
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (9:2)
+  (in /Users/andreacoravos/Desktop/veritas/app/assets/javascripts/components/questionList.js.jsx)):
+     5:   <%= stylesheet_link_tag    'application', media: 'all' %>
+     6:   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+     7: 
+     8:   <%= javascript_include_tag 'application' %>
+     9: 
+    10: 
+    11: </head>
+  app/views/single_page_app/show.html.erb:8:in `_app_views_single_page_app_show_html_erb___461598226332805601_70196164469000'
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:26:07 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (193.9ms)
+Completed 500 Internal Server Error in 196ms
+
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (9:2)
+  (in /Users/andreacoravos/Desktop/veritas/app/assets/javascripts/components/questionList.js.jsx)):
+     5:   <%= stylesheet_link_tag    'application', media: 'all' %>
+     6:   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+     7: 
+     8:   <%= javascript_include_tag 'application' %>
+     9: 
+    10: 
+    11: </head>
+  app/views/single_page_app/show.html.erb:8:in `_app_views_single_page_app_show_html_erb___461598226332805601_70196164469000'
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (481.7ms)
+Completed 200 OK in 484ms (Views: 484.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/components/QuestionIndividual.js?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 11:27:15 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 11:27:16 -0700
+Processing by QuestionsController#index as JSON
+  [1m[35mQuestion Load (1.2ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 19ms (Views: 7.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:30:45 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (282.2ms)
+Completed 200 OK in 286ms (Views: 285.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 11:30:45 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 11:30:45 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 11:30:45 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 11:30:45 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 11:30:45 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 11:30:45 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 11:30:45 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 11:30:45 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 11:30:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 11:30:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 11:30:45 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 11:30:45 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 11:30:45 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 11:30:45 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 11:30:45 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 11:30:45 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 11:30:45 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 11:30:45 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 11:30:46 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 11:30:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 11:30:46 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 11:30:46 -0700
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 12ms (Views: 7.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (277.0ms)
+Completed 200 OK in 280ms (Views: 279.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 11:32:57 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 11:33:51 -0700
+Processing by QuestionsController#index as JSON
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (313.5ms)
+Completed 200 OK in 316ms (Views: 316.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 11:33:53 -0700
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:37:45 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (286.9ms)
+Completed 200 OK in 289ms (Views: 289.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:37:46 -0700
+Processing by SinglePageAppController#show as JSON
+  Rendered single_page_app/show.html.erb (76.4ms)
+Completed 200 OK in 87ms (Views: 86.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 11:38:09 -0700
+Processing by SinglePageAppController#show as HTML
+  Parameters: {"path"=>"questions"}
+  Rendered single_page_app/show.html.erb (65.3ms)
+Completed 200 OK in 68ms (Views: 67.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:10 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:38:22 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (65.9ms)
+Completed 200 OK in 68ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:22 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:22 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:22 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:22 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:22 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:22 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:22 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:22 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:22 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:22 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:22 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:22 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:22 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:22 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:23 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:23 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:23 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:23 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:23 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:38:23 -0700
+Processing by SinglePageAppController#show as JSON
+  Rendered single_page_app/show.html.erb (83.7ms)
+Completed 200 OK in 93ms (Views: 92.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tweet-box" for 127.0.0.1 at 2015-08-04 11:38:52 -0700
+Processing by SinglePageAppController#show as HTML
+  Parameters: {"path"=>"tweet-box"}
+  Rendered single_page_app/show.html.erb (67.6ms)
+Completed 200 OK in 70ms (Views: 69.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/tweet-box" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+Processing by SinglePageAppController#show as HTML
+  Parameters: {"path"=>"tweet-box"}
+  Rendered single_page_app/show.html.erb (73.4ms)
+Completed 200 OK in 76ms (Views: 75.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:53 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:54 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:54 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:54 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 11:38:54 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:45:33 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (290.9ms)
+Completed 200 OK in 293ms (Views: 293.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+
+
+Started GET "/question" for 127.0.0.1 at 2015-08-04 11:45:34 -0700
+Processing by SinglePageAppController#show as JSON
+  Parameters: {"path"=>"question"}
+  Rendered single_page_app/show.html.erb (90.5ms)
+Completed 200 OK in 101ms (Views: 100.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:46:50 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (291.6ms)
+Completed 200 OK in 294ms (Views: 294.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 11:46:51 -0700
+Processing by QuestionsController#index as JSON
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 14ms (Views: 8.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (280.1ms)
+Completed 200 OK in 283ms (Views: 282.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 11:47:35 -0700
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 14ms (Views: 9.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:51:54 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (308.2ms)
+Completed 200 OK in 312ms (Views: 311.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 11:51:54 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 11:51:54 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 11:51:55 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 11:51:55 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 11:51:55 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 11:51:55 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 11:51:55 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 11:51:55 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 11:51:55 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 11:51:55 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 11:51:55 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 11:51:55 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 11:51:55 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 11:51:55 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 11:51:55 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 11:51:55 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 11:51:55 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 11:51:55 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 11:51:55 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 11:51:55 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 11:51:55 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 11:51:55 -0700
+Processing by QuestionsController#index as JSON
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 14ms (Views: 8.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:56:15 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (294.1ms)
+Completed 200 OK in 297ms (Views: 296.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 11:56:16 -0700
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:57:15 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (275.4ms)
+Completed 200 OK in 278ms (Views: 277.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 11:57:16 -0700
+Processing by QuestionsController#index as JSON
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 15ms (Views: 9.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (284.0ms)
+Completed 200 OK in 287ms (Views: 286.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:38 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 11:57:39 -0700
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.9ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 15ms (Views: 9.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:57:52 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (333.7ms)
+Completed 200 OK in 337ms (Views: 336.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:52 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:52 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:52 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:52 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:52 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:52 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:52 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:52 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:52 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:52 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:52 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:52 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:52 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:52 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:52 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:52 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:52 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:52 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:53 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:53 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:53 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 11:57:53 -0700
+Processing by QuestionsController#index as JSON
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 16ms (Views: 9.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 11:57:54 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (71.4ms)
+Completed 200 OK in 74ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 11:57:55 -0700
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 12:02:50 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (204.6ms)
+Completed 500 Internal Server Error in 207ms
+
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (34:2)
+  (in /Users/andreacoravos/Desktop/veritas/app/assets/javascripts/components/homepage.js.jsx)):
+     5:   <%= stylesheet_link_tag    'application', media: 'all' %>
+     6:   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+     7: 
+     8:   <%= javascript_include_tag 'application' %>
+     9: 
+    10: 
+    11: </head>
+  app/views/single_page_app/show.html.erb:8:in `_app_views_single_page_app_show_html_erb___461598226332805601_70196164469000'
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 12:05:09 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (205.9ms)
+Completed 500 Internal Server Error in 208ms
+
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (34:2)
+  (in /Users/andreacoravos/Desktop/veritas/app/assets/javascripts/components/homepage.js.jsx)):
+     5:   <%= stylesheet_link_tag    'application', media: 'all' %>
+     6:   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+     7: 
+     8:   <%= javascript_include_tag 'application' %>
+     9: 
+    10: 
+    11: </head>
+  app/views/single_page_app/show.html.erb:8:in `_app_views_single_page_app_show_html_erb___461598226332805601_70196164469000'
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 12:08:30 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (406.4ms)
+Completed 500 Internal Server Error in 416ms
+
+ActionView::Template::Error (SyntaxError: /Users/andreacoravos/Desktop/veritas/app/assets/javascripts/components/homepage.js.jsx:34:2
+
+20:     if (this.state.questions === null) return 'Loading...';
+21:     return (
+22:       <QuestionList questions={this.state.questions} onSelect={this.selectQuestion}/>
+23:     );
+24:   },
+25: 
+26:   renderComments: function(){
+27:     if (this.state.selectedQuestion === null) return;
+28:     return (
+29:       <QuestionComments question={this.state.selectedQuestion} />
+30:     )
+31:   }
+32: 
+33: 
+34:   render: function(){
+35:     return (
+36:       <div className="HomePage">
+37:         <h1>Welcome to Veritas</h1>
+38: 
+39:         <p><b>In early 2015</b>, the New York Times published Mandy Len Catron’s Modern Love essay, <a href="http://www.nytimes.com/2015/01/11/fashion/modern-love-to-fall-in-love-with-anyone-do-this.html">“To Fall in Love With Anyone, Do This”</a>.</p>
+40: 
+41:         <p> In the essay, Catron refers to a <a href="http://psp.sagepub.com/content/23/4/363.full.pdf+html">study by the psychologist Arthur Aron (and others)</a> that explores whether intimacy between two strangers can be accelerated by having them ask each other a specific series of personal questions. The 36 questions in the study are broken up into three sets, with each set intended to be more probing than the previous one.</p>
+42: 
+43:         <p><b>Imagine a scenario</b>, now that this article went viral, there is a risk your partner may sit you down and start asking theses questions. Are you ready to answer?</p>
+44: 
+45:         <p><b>At Veritas, we are here to help.</b> We provide a space for you to test out your answers with the community first before having to answer your partner </p>
+46: 
+47:         <h2> To begin, find a question you would like to answer. </h2>
+48: 
+49:         <div class="question-list-right">):
+     5:   <%= stylesheet_link_tag    'application', media: 'all' %>
+     6:   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+     7: 
+     8:   <%= javascript_include_tag 'application' %>
+     9: 
+    10: 
+    11: </head>
+  config/initializers/better_js_syntax_errors.rb:8:in `evaluate_with_better_errors'
+  app/views/single_page_app/show.html.erb:8:in `_app_views_single_page_app_show_html_erb___1692808758849448142_70146987838000'
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.5ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 12:08:50 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (686.9ms)
+Completed 200 OK in 690ms (Views: 689.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 12:08:51 -0700
+Processing by QuestionsController#index as JSON
+  [1m[35mQuestion Load (0.5ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 14ms (Views: 6.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 12:18:31 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (212.6ms)
+Completed 500 Internal Server Error in 215ms
+
+ActionView::Template::Error (SyntaxError: unknown: Adjacent JSX elements must be wrapped in an enclosing tag (12:79)
+  (in /Users/andreacoravos/Desktop/veritas/app/assets/javascripts/components/questionList.js.jsx)):
+     5:   <%= stylesheet_link_tag    'application', media: 'all' %>
+     6:   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+     7: 
+     8:   <%= javascript_include_tag 'application' %>
+     9: 
+    10: 
+    11: </head>
+  config/initializers/better_js_syntax_errors.rb:8:in `evaluate_with_better_errors'
+  app/views/single_page_app/show.html.erb:8:in `_app_views_single_page_app_show_html_erb___1692808758849448142_70146987838000'
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 12:18:40 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (284.8ms)
+Completed 200 OK in 288ms (Views: 287.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 12:18:41 -0700
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.5ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 11ms (Views: 6.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 12:19:22 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (200.8ms)
+Completed 500 Internal Server Error in 204ms
+
+ActionView::Template::Error (SyntaxError: unknown: Adjacent JSX elements must be wrapped in an enclosing tag (13:6)
+  (in /Users/andreacoravos/Desktop/veritas/app/assets/javascripts/components/questionList.js.jsx)):
+     5:   <%= stylesheet_link_tag    'application', media: 'all' %>
+     6:   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+     7: 
+     8:   <%= javascript_include_tag 'application' %>
+     9: 
+    10: 
+    11: </head>
+  config/initializers/better_js_syntax_errors.rb:8:in `evaluate_with_better_errors'
+  app/views/single_page_app/show.html.erb:8:in `_app_views_single_page_app_show_html_erb___1692808758849448142_70146987838000'
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (278.9ms)
+Completed 200 OK in 282ms (Views: 281.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 12:19:41 -0700
+Processing by QuestionsController#index as JSON
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 21ms (Views: 6.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 12:20:14 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (281.6ms)
+Completed 200 OK in 284ms (Views: 284.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 12:20:15 -0700
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 13:38:04 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (489.7ms)
+Completed 200 OK in 493ms (Views: 492.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/assets/components/Homepage.js?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/assets/components/QuestionList.js?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 13:38:05 -0700
+Processing by QuestionsController#index as JSON
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (66.7ms)
+Completed 200 OK in 69ms (Views: 69.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/assets/components/Homepage.js?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/assets/components/QuestionList.js?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/assets/components/tweetbox.js?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 13:39:00 -0700
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms)
