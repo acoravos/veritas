@@ -5,7 +5,7 @@ describe 'As I user I can', :js => true do
 
   it 'visit the homepage' do
     visit '/'
-    expect(page).to have_selector 'div.HomePage'
+    expect(page).to have_selector 'div.pure-g'
   end
 
 end

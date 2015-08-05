@@ -21159,3 +21159,108 @@ Processing by CommentsController#index as JSON
   Parameters: {"question_id"=>"4"}
   [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."question_id" = 4[0m
 Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/questions/4/comments" for 127.0.0.1 at 2015-08-04 23:08:52 -0700
+Processing by CommentsController#create as JSON
+  Parameters: {"text"=>"Being with Andrea <3 <3 <3 <3", "author"=>"Shahab", "question_id"=>"4"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "comments" ("author", "created_at", "question_id", "text", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author", "Shahab"], ["created_at", "2015-08-05 06:08:52.027580"], ["question_id", 4], ["text", "Being with Andrea <3 <3 <3 <3"], ["updated_at", "2015-08-05 06:08:52.027580"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT  "comments".* FROM "comments"   ORDER BY "comments"."id" DESC LIMIT 10[0m
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/questions/4/comments" for 127.0.0.1 at 2015-08-04 23:08:52 -0700
+Processing by CommentsController#index as JSON
+  Parameters: {"question_id"=>"4"}
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."question_id" = 4
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (78.0ms)
+Completed 200 OK in 81ms (Views: 80.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/Comment.js?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/components/Homepage.js?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/components/QuestionList.js?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/components/_comment_form.js?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/components/_comment_list.js?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-05 00:13:07 -0700
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions/1/comments" for 127.0.0.1 at 2015-08-05 00:13:09 -0700
+Processing by CommentsController#index as JSON
+  Parameters: {"question_id"=>"1"}
+  [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."question_id" = 1
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.5ms)
