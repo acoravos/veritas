@@ -38,16 +38,14 @@ HomePage = React.createClass({
 
         <h4>In early 2015, the New York Times published a classic Modern Love post.</h4>
 
-        <p>Mandy Len Catron’s essay, <a href="http://www.nytimes.com/2015/01/11/fashion/modern-love-to-fall-in-love-with-anyone-do-this.html">“To Fall in Love With Anyone, Do This”</a>, claimed that a pair of strangers could fall in love after answering 36 questions together. And it went viral.</p>
-
-        <p> In the essay, Catron refers to a <a href="http://psp.sagepub.com/content/23/4/363.full.pdf+html">study by the psychologist Arthur Aron (and others)</a> that explores whether intimacy between two strangers can be accelerated by having them ask each other a specific series of personal questions.</p>
+        <p>Mandy Len Catron’s essay, <a href="http://www.nytimes.com/2015/01/11/fashion/modern-love-to-fall-in-love-with-anyone-do-this.html">“To Fall in Love With Anyone, Do This”</a>, claimed that a pair of strangers could fall in love after answering 36 questions together. In the essay, Catron refers to a <a href="http://psp.sagepub.com/content/23/4/363.full.pdf+html">study by the psychologist Arthur Aron (and others)</a> that explores whether intimacy between two strangers can be accelerated by having them ask each other a specific series of personal questions. Not surprisingly, the essay went viral.</p>
 
         <h4>And then a lot of people got nervous.</h4>
 
         <p>Imagine this scenario: your partner / wife / boyfriend / summer fling read the article and wants to talk about the questions on your date tonight. Are you ready to answer?</p>
 
-        <h4>At Veritas, we are here to help.</h4>
-        <p>We provide a space for you to test out your answers with the community first before having to answer your partner </p>
+        <h4>At Veritas, we make this conversation a little less scary.</h4>
+        <p>We provide a space for you to test out your answers with the community first, before having to answer the questions with your partner.</p>
 
 
         <div className="pure-g">
