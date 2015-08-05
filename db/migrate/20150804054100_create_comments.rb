@@ -3,7 +3,7 @@ class CreateComments < ActiveRecord::Migration
     create_table :comments do |t|
       t.integer :question_id
       t.string :author
-      t.text :comment
+      t.text :text
 
       t.timestamps
     end
