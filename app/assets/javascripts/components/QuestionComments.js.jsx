@@ -30,9 +30,8 @@ QuestionComments = React.createClass({
   handleCommentSubmit: function(dataObject){
     var question_id = this.props.question.id
     var path = '/questions/'+question_id+'/comments'
-    debugger
-    App.request('post', path, dataObject.serialize())
-
+    App.request('post', path, dataObject)
+    this.loadComments(question_id)
   },
 
   render: function(){

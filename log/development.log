@@ -16964,3 +16964,1630 @@ Processing by CommentsController#index as JSON
   Parameters: {"question_id"=>"1"}
   [1m[35mComment Load (0.7ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."question_id" = 1
 Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (347.9ms)
+Completed 200 OK in 351ms (Views: 351.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/Comment.js?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/components/Homepage.js?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/components/QuestionList.js?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/components/_comment_form.js?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/components/_comment_list.js?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 22:30:38 -0700
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 16ms (Views: 8.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:30:41 -0700
+Processing by CommentsController#index as JSON
+  Parameters: {"question_id"=>"1"}
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."question_id" = 1
+Completed 200 OK in 11ms (Views: 5.9ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:31:01 -0700
+Processing by CommentsController#create as JSON
+  Parameters: {"text"=>"With SO", "author"=>"Jared", "question_id"=>"1"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request'
+  actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request'
+  actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/mapper.rb:45:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.3ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (40.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (80.7ms)
+Completed 200 OK in 83ms (Views: 83.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/Comment.js?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/components/Homepage.js?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/components/QuestionList.js?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/components/_comment_form.js?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/components/_comment_list.js?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 22:31:54 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 22:31:55 -0700
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:31:56 -0700
+Processing by CommentsController#index as JSON
+  Parameters: {"question_id"=>"1"}
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."question_id" = 1
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (296.8ms)
+Completed 200 OK in 300ms (Views: 299.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+Processing by CommentsController#create as JSON
+  Parameters: {"text"=>"SO", "author"=>"Jared", "question_id"=>"1"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request'
+  actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request'
+  actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/mapper.rb:45:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (37.7ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/Comment.js?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/components/Homepage.js?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/components/QuestionList.js?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/components/_comment_form.js?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/components/_comment_list.js?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 22:33:38 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 22:33:39 -0700
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 15ms (Views: 10.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:33:40 -0700
+Processing by CommentsController#index as JSON
+  Parameters: {"question_id"=>"1"}
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."question_id" = 1
+Completed 200 OK in 8ms (Views: 3.5ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:34:38 -0700
+Processing by CommentsController#create as JSON
+  Parameters: {"text"=>"SO", "author"=>"Jared", "question_id"=>"1"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 0ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request'
+  actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request'
+  actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/mapper.rb:45:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (34.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (289.6ms)
+Completed 200 OK in 292ms (Views: 292.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+
+
+Started GET "/assets/Comment.js?body=1" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+
+
+Started GET "/assets/components/Homepage.js?body=1" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+
+
+Started GET "/assets/components/QuestionList.js?body=1" for 127.0.0.1 at 2015-08-04 22:34:40 -0700
+
+
+Started GET "/assets/components/_comment_form.js?body=1" for 127.0.0.1 at 2015-08-04 22:34:41 -0700
+
+
+Started GET "/assets/components/_comment_list.js?body=1" for 127.0.0.1 at 2015-08-04 22:34:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 22:34:41 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 22:34:41 -0700
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 15ms (Views: 10.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:34:42 -0700
+Processing by CommentsController#index as JSON
+  Parameters: {"question_id"=>"1"}
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."question_id" = 1
+Completed 200 OK in 9ms (Views: 4.8ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:35:25 -0700
+Processing by CommentsController#create as JSON
+  Parameters: {"text"=>"SO", "author"=>"Jared", "question_id"=>"1"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request'
+  actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request'
+  actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/mapper.rb:45:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (36.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (299.2ms)
+Completed 200 OK in 302ms (Views: 301.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/Comment.js?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/components/Homepage.js?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/components/QuestionList.js?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/components/_comment_form.js?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/components/_comment_list.js?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 22:36:12 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 22:36:13 -0700
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 12ms (Views: 6.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:36:15 -0700
+Processing by CommentsController#index as JSON
+  Parameters: {"question_id"=>"1"}
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."question_id" = 1
+Completed 200 OK in 8ms (Views: 4.1ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:37:42 -0700
+Processing by CommentsController#create as JSON
+  Parameters: {"text"=>"SO", "author"=>"Jared", "question_id"=>"1"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request'
+  actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request'
+  actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/mapper.rb:45:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (33.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 22:37:43 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (293.7ms)
+Completed 200 OK in 297ms (Views: 296.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/Comment.js?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/components/Homepage.js?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/components/QuestionList.js?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/components/_comment_form.js?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/components/_comment_list.js?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 22:37:44 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 22:37:45 -0700
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 11ms (Views: 6.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:37:47 -0700
+Processing by CommentsController#index as JSON
+  Parameters: {"question_id"=>"1"}
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."question_id" = 1
+Completed 200 OK in 8ms (Views: 4.3ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:38:03 -0700
+Processing by CommentsController#create as JSON
+  Parameters: {"text"=>"SO", "author"=>"Jared", "question_id"=>"1"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request'
+  actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request'
+  actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/mapper.rb:45:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (37.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (64.6ms)
+Completed 200 OK in 67ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/Comment.js?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/components/Homepage.js?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/components/QuestionList.js?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/components/_comment_form.js?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/components/_comment_list.js?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 22:39:03 -0700
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.5ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 18ms (Views: 11.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:39:05 -0700
+Processing by CommentsController#index as JSON
+  Parameters: {"question_id"=>"1"}
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."question_id" = 1
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:39:12 -0700
+Processing by CommentsController#create as JSON
+  Parameters: {"text"=>"SO", "author"=>"Jared", "question_id"=>"1"}
+Completed 400 Bad Request in 0ms
+
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  app/controllers/comments_controller.rb:22:in `comment_params'
+  app/controllers/comments_controller.rb:9:in `create'
+
+
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/andreacoravos/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (37.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (60.3ms)
+Completed 200 OK in 63ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/Comment.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/components/Homepage.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/components/QuestionList.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/components/_comment_form.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/components/_comment_list.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 22:40:01 -0700
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 16ms (Views: 11.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:40:03 -0700
+Processing by CommentsController#index as JSON
+  Parameters: {"question_id"=>"1"}
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."question_id" = 1
+Completed 200 OK in 8ms (Views: 4.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:40:16 -0700
+Processing by CommentsController#create as JSON
+  Parameters: {"text"=>"With my SO", "author"=>"Jared", "question_id"=>"1"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("author", "created_at", "question_id", "text", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["author", "Jared"], ["created_at", "2015-08-05 05:40:16.086319"], ["question_id", 1], ["text", "With my SO"], ["updated_at", "2015-08-05 05:40:16.086319"]]
+  [1m[36m (5.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mComment Load (0.5ms)[0m  SELECT  "comments".* FROM "comments"   ORDER BY "comments"."id" DESC LIMIT 10
+Completed 200 OK in 17ms (Views: 0.9ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (66.4ms)
+Completed 200 OK in 69ms (Views: 68.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/Comment.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/components/Homepage.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/components/QuestionList.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/components/_comment_form.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/assets/components/_comment_list.js?body=1" for 127.0.0.1 at 2015-08-04 22:40:24 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 22:40:25 -0700
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:40:26 -0700
+Processing by CommentsController#index as JSON
+  Parameters: {"question_id"=>"1"}
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."question_id" = 1
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions/2/comments" for 127.0.0.1 at 2015-08-04 22:41:42 -0700
+Processing by CommentsController#index as JSON
+  Parameters: {"question_id"=>"2"}
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."question_id" = 2[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions/3/comments" for 127.0.0.1 at 2015-08-04 22:41:44 -0700
+Processing by CommentsController#index as JSON
+  Parameters: {"question_id"=>"3"}
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."question_id" = 3
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:41:47 -0700
+Processing by CommentsController#index as JSON
+  Parameters: {"question_id"=>"1"}
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."question_id" = 1[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (292.5ms)
+Completed 200 OK in 295ms (Views: 294.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/Comment.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/components/Homepage.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/components/QuestionList.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/components/_comment_form.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/components/_comment_list.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 22:43:11 -0700
+Processing by QuestionsController#index as JSON
+  [1m[35mQuestion Load (0.7ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 16ms (Views: 10.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:43:13 -0700
+Processing by CommentsController#index as JSON
+  Parameters: {"question_id"=>"1"}
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."question_id" = 1[0m
+Completed 200 OK in 8ms (Views: 4.6ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:43:22 -0700
+Processing by CommentsController#create as JSON
+  Parameters: {"text"=>"Obama", "author"=>"Shahab", "question_id"=>"1"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "comments" ("author", "created_at", "question_id", "text", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author", "Shahab"], ["created_at", "2015-08-05 05:43:22.582675"], ["question_id", 1], ["text", "Obama"], ["updated_at", "2015-08-05 05:43:22.582675"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT  "comments".* FROM "comments"   ORDER BY "comments"."id" DESC LIMIT 10[0m
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (291.2ms)
+Completed 200 OK in 294ms (Views: 293.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/Comment.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/components/Homepage.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/components/QuestionList.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/components/_comment_form.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/components/_comment_list.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 22:43:32 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 22:43:34 -0700
+Processing by QuestionsController#index as JSON
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 13ms (Views: 8.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:43:35 -0700
+Processing by CommentsController#index as JSON
+  Parameters: {"question_id"=>"1"}
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."question_id" = 1[0m
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:43:41 -0700
+Processing by CommentsController#create as JSON
+  Parameters: {"text"=>"Kim", "author"=>"Kanye", "question_id"=>"1"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "comments" ("author", "created_at", "question_id", "text", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author", "Kanye"], ["created_at", "2015-08-05 05:43:41.849650"], ["question_id", 1], ["text", "Kim"], ["updated_at", "2015-08-05 05:43:41.849650"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT  "comments".* FROM "comments"   ORDER BY "comments"."id" DESC LIMIT 10[0m
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/questions/1/comments" for 127.0.0.1 at 2015-08-04 22:43:41 -0700
+Processing by CommentsController#index as JSON
+  Parameters: {"question_id"=>"1"}
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."question_id" = 1
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (65.5ms)
+Completed 200 OK in 68ms (Views: 68.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/Comment.js?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/components/Homepage.js?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/components/QuestionList.js?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/components/_comment_form.js?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/components/_comment_list.js?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-04 22:45:01 -0700
+Processing by QuestionsController#index as JSON
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.3ms)

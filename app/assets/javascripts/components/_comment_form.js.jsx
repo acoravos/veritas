@@ -19,6 +19,7 @@ var CommentForm = React.createClass({
     var comment = {
       text: text,
       author: author,
+      question_id: this.props.question.id
     };
 
     // submit
