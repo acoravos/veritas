@@ -12,8 +12,6 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'bcrypt', '~> 3.1.7'
 
-gem 'gon'
-
 gem 'react-rails', '~> 1.0'
 
 group :development, :test do

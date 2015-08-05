@@ -1,12 +1,8 @@
 class CommentsController < ApplicationController
 
   def index
-    @presenter = {
-      :comments => Comment.last(10),
-      :form => {
-        :action => question_comments_path,
-      }
-    }
+    comments = Comment.where(question_id: params[:question_id])
+    render json: comments
   end
 
   def create

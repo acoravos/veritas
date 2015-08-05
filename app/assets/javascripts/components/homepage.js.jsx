@@ -3,8 +3,6 @@ HomePage = React.createClass({
     return {
       questions: null,
       selectedQuestion: null,
-      comments: null,
-      selectedComments,
     }
   },
 
@@ -26,9 +24,9 @@ HomePage = React.createClass({
   },
 
   renderComments: function(){
-    if (this.state.selectedQuestion === null) return;
+    if (this.state.selectedQuestion === null) return 'Select a question....';
     return (
-      <QuestionComments question={this.state.selectedQuestion} />
+      <QuestionComments question={this.state.selectedQuestion}/>
     )
   },
 

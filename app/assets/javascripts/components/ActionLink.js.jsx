@@ -5,7 +5,7 @@ ActionLink = React.createClass({
     if (this.props.onClick){
       this.props.onClick(event);
     }
-    App.setPath(this.props.href);
+    App.goto(this.props.href);
   },
 
   render: function(){
