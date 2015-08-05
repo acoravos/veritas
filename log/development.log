@@ -21264,3 +21264,85 @@ Processing by CommentsController#index as JSON
   Parameters: {"question_id"=>"1"}
   [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."question_id" = 1
 Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-05 01:16:41 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SinglePageAppController#show as HTML
+  Rendered single_page_app/show.html.erb (1815.4ms)
+Completed 200 OK in 1821ms (Views: 1820.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/homepage.css?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/marketing.css?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/marketing-old-ie.css?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/single_page_app.css?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/components/ActionLink.js?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/components/MainComponent.js?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/components/QuestionComments.js?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/components/_comment_form.js?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/components/_comment_list.js?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/components/homepage.js?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/components/questionList.js?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/App.js?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/Comment.js?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/Question.js?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-05 01:16:43 -0700
+
+
+Started GET "/questions" for 127.0.0.1 at 2015-08-05 01:16:44 -0700
+Processing by QuestionsController#index as JSON
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"
+Completed 200 OK in 23ms (Views: 13.9ms | ActiveRecord: 2.7ms)

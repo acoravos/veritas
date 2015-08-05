@@ -1,6 +1,3 @@
-//= require_self
-//= require_tree ./App
-
 App = {};
 
 App.request = function(method, path, data){
