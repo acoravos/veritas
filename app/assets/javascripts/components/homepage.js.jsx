@@ -61,10 +61,6 @@ HomePage = React.createClass({
 
       </div>
 
-
-
-
-
     );
   }
 
