@@ -33,28 +33,41 @@ HomePage = React.createClass({
 
   render: function(){
     return (
-      <div className="HomePage">
-        <h1>Welcome to Veritas</h1>
+      <div className="content">
+        <h1 className="content-head is-center">Welcome to Veritas</h1>
 
-        <p><b>In early 2015</b>, the New York Times published Mandy Len Catron’s Modern Love essay, <a href="http://www.nytimes.com/2015/01/11/fashion/modern-love-to-fall-in-love-with-anyone-do-this.html">“To Fall in Love With Anyone, Do This”</a>.</p>
+        <h4>In early 2015, the New York Times published a classic Modern Love post.</h4>
 
-        <p> In the essay, Catron refers to a <a href="http://psp.sagepub.com/content/23/4/363.full.pdf+html">study by the psychologist Arthur Aron (and others)</a> that explores whether intimacy between two strangers can be accelerated by having them ask each other a specific series of personal questions. The 36 questions in the study are broken up into three sets, with each set intended to be more probing than the previous one.</p>
+        <p>Mandy Len Catron’s essay, <a href="http://www.nytimes.com/2015/01/11/fashion/modern-love-to-fall-in-love-with-anyone-do-this.html">“To Fall in Love With Anyone, Do This”</a>, claimed that a pair of strangers could fall in love after answering 36 questions together. And it went viral.</p>
 
-        <p><b>Imagine a scenario</b>, now that this article went viral, there is a risk your partner may sit you down and start asking theses questions. Are you ready to answer?</p>
+        <p> In the essay, Catron refers to a <a href="http://psp.sagepub.com/content/23/4/363.full.pdf+html">study by the psychologist Arthur Aron (and others)</a> that explores whether intimacy between two strangers can be accelerated by having them ask each other a specific series of personal questions.</p>
 
-        <p><b>At Veritas, we are here to help.</b> We provide a space for you to test out your answers with the community first before having to answer your partner </p>
+        <h4>And then a lot of people got nervous.</h4>
 
-        <h2> To begin, find a question you would like to answer. </h2>
+        <p>Imagine this scenario: your partner / wife / boyfriend / summer fling read the article and wants to talk about the questions on your date tonight. Are you ready to answer?</p>
 
-        <div class="question-list-right">
-        {this.renderQuestions()}
-        </div>
+        <h4>At Veritas, we are here to help.</h4>
+        <p>We provide a space for you to test out your answers with the community first before having to answer your partner </p>
 
-        <div class="comment-box-left">
-          {this.renderComments()}
+
+        <div className="pure-g">
+            <div className="l-box-lrg pure-u-1-2">
+            <h2 className="content-head is-center"> To begin, find a question you would like to answer. </h2>
+              {this.renderQuestions()}
+            </div>
+
+            <div className="l-box-lrg pure-u-1-2">
+            <h2 className="content-head is-center"> Community Replies </h2>
+              {this.renderComments()}
+            </div>
         </div>
 
       </div>
+
+
+
+
+
     );
   }
 

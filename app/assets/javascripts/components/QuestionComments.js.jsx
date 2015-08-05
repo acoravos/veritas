@@ -27,8 +27,12 @@ QuestionComments = React.createClass({
     }
   },
 
-  handleCommentSubmit: function(question){
+  handleCommentSubmit: function(dataObject){
+    var question_id = this.props.question.id
+    var path = '/questions/'+question_id+'/comments'
     debugger
+    App.request('post', path, dataObject.serialize())
+
   },
 
   render: function(){
@@ -43,7 +47,7 @@ QuestionComments = React.createClass({
     return (
       <div className="comment-box">
         {comments}
-        <h1>Add a comment for {this.props.question.id} here:</h1>
+        <h2 className="content-head is-center">Provide your answer for "{this.props.question.truth}":</h2>
         <CommentForm question={this.props.question} onCommentSubmit={this.handleCommentSubmit} />
       </div>
     );

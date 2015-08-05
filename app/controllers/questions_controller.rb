@@ -8,7 +8,6 @@ class QuestionsController < ApplicationController
 
   def show
     @question = Question.find(params[:id])
-    gon.question_id = @question.id
   end
 
 end

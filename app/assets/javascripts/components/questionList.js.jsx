@@ -9,10 +9,10 @@ var QuestionList = React.createClass({
     var onSelect = this.props.onSelect
     var questions = this.props.questions.map(function (question) {
       var selectQuestion = onSelect.bind(null, question)
-      return <ul><ActionLink onClick={selectQuestion}>{question.truth}</ActionLink></ul>
+      return <div key={question.id}><ul><ActionLink onClick={selectQuestion}>{question.truth}</ActionLink></ul></div>
 
     });
 
-    return <div class="QuestionList"> {questions} </div>;
+    return <div class="QuestionList"><ul> {questions} </ul></div>;
   },
 });
