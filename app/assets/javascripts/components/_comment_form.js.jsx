@@ -31,10 +31,10 @@ var CommentForm = React.createClass({
 
   render: function () {
     return (
-      <form ref="form" className="comment-form" onSubmit={ this.handleSubmit }>
+      <form ref="form" className="pure-form pure-form-stacked" onSubmit={ this.handleSubmit }>
         <p><input ref="author" name="comment[author]" placeholder="Your name" /></p>
         <p><textarea ref="text" name="comment[text]" placeholder="Say something..." /></p>
-        <p><input type="submit"></input></p>
+        <p><button type="submit">Share my thoughts</button></p>
       </form>
     )
   }

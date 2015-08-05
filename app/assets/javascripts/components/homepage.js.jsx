@@ -24,7 +24,7 @@ HomePage = React.createClass({
   },
 
   renderComments: function(){
-    if (this.state.selectedQuestion === null) return 'Select a question....';
+    if (this.state.selectedQuestion === null) return <div><h2 className="content-head is-center"> Communitity Replies </h2> <p className="content-head is-center">Select a question...</p></div>;
     return (
       <QuestionComments question={this.state.selectedQuestion}/>
     )
@@ -57,7 +57,6 @@ HomePage = React.createClass({
             </div>
 
             <div className="l-box-lrg pure-u-1-2">
-            <h2 className="content-head is-center"> Community Replies </h2>
               {this.renderComments()}
             </div>
         </div>

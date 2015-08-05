@@ -39,15 +39,17 @@ QuestionComments = React.createClass({
     if (this.state.comments === null){
       comments = <div>Loading...</div>
     }else if (this.state.comments.length === 0){
-      comments = <div>no comments</div>
+      comments = <div>No comments yet. Be a brave soul, and be the first to share your thoughts.</div>
     }else{
       comments = <CommentList comments={this.state.comments} />
     }
     return (
       <div className="comment-box">
-        {comments}
-        <h2 className="content-head is-center">Provide your answer for "{this.props.question.truth}":</h2>
+        <h2 className="content-head is-center">Share your thoughts</h2>
+        <p className="content-head is-center">{this.props.question.truth}</p>
         <CommentForm question={this.props.question} onCommentSubmit={this.handleCommentSubmit} />
+        <h2 className="content-head is-center">Community Replies</h2>
+        {comments}
       </div>
     );
   }
