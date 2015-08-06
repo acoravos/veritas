@@ -29,7 +29,3 @@ App.router = function(path){
   if (path.match(/^\/questions\/(\d+)\/comments$/))   return <CommentShowPage  question_id={RegExp.$1} />;
   return <h1>Page Not Found</h1>
 };
-
-$(function(){
-  React.render(<MainComponent />, document.body);
-});
