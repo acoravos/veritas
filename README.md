@@ -22,7 +22,7 @@ The Veritas app uses a range of technologies.
 
 ## Demo
 
-[My Heroku app didn't load after 2 hours of troubleshooting. I will find a solution.](#)
+[Check out a demo on Heroku.](https://veritasapp.herokuapp.com/)
 
 
 
